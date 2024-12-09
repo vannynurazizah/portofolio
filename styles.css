@@ -1,0 +1,195 @@
+/* Reset dasar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    background-color: #fce4ec; /* Warna latar belakang pink muda */
+}
+
+/* Header styling */
+header {
+    background-color: #d81b60; /* Warna header pink */
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+/* Card Styling */
+.card {
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 2px solid #d81b60; /* Border card berwarna pink */
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+    margin-top: 0;
+    color: #d81b60; /* Warna teks h2 jadi pink */
+    text-align: center;
+}
+/* Flex Container */
+/* Flex Container */
+.flex-container .photo img {
+    width: 200px; /* Pastikan lebar dan tinggi gambar sama */
+    height: 200px;
+    border-radius: 50%; /* Membuat foto menjadi bulat */
+    border: 5px solid #ddd; /* Border tipis pada foto */
+    object-fit: cover; /* Agar gambar tetap terpotong proporsional */
+}
+
+
+/* Flex Container */
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.flex-container .photo img {
+    max-width: 200px;
+    border-radius: 50%;
+    border: 5px solid #ddd;
+}
+
+.flex-container .info {
+    max-width: 500px;
+    text-align: justify;
+}
+
+/* Lists inside cards */
+.card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.card ul li {
+    margin: 5px 0;
+    padding: 5px 10px;
+    background-color: #f8bbd0; /* Warna latar belakang list pink */
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Menu */
+nav {
+    background-color: #f4f4f4;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #d81b60; /* Warna teks menu pink */
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: color 0.3s, background-color 0.3s, padding 0.3s;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    background-color: #d81b60; /* Warna background menu hover pink */
+    padding: 5px 15px;
+}
+
+/* Kontak dan sosial media */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+}
+
+.social-logo {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.social-logo:hover {
+    transform: scale(1.1);
+}
+
+/* Kontak item (email dan telepon dengan logo) */
+.contact-item {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.contact-logo {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s;
+}
+
+.contact-logo:hover {
+    transform: scale(1.1);
+}
+
+/* Link styling untuk email dan telepon */
+a {
+    color: #d81b60; /* Warna pink untuk hyperlink */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #d81b60; /* Warna footer pink */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex-container .photo img {
+        max-width: 150px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+}
